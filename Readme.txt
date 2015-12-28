@@ -25,3 +25,10 @@ git checkout v1
 3.git tag v2
 4.git push origin master
 5.git push origin --tags
+
+添加了button, checkbox的点击方法
+1.git add -A
+2.git commit -m "v3,add methods for button and checkbox"
+3.git tag v3
+4.git push origin master
+5.git push origin --tags
