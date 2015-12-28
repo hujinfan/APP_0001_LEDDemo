@@ -10,6 +10,11 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
     sourceSets {
         main {
@@ -25,6 +30,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
+    compile project(':classes')
+    compile 'com.android.support:multidex:1.0.0'
 }
