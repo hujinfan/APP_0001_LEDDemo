@@ -52,3 +52,14 @@ sourceSets {
         }
     }
 编译出来的app程序位于：APP_0001_LEDDemo\app\build\outputs\apk\app-debug.apk
+
+
+调用了ledOpen, ledCtrl
+1.git add -A
+2.git commit -m "v5,call ledOpen() and ledCtrl()"
+3.git tag v5
+4.git push origin master
+5.git push origin --tags
+
+跳到定义的位置：Ctrl+B
+
